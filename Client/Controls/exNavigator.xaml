@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" CornerRadius="15"
+             BackgroundColor="White"
+             x:Class="Client.Controls.exNavigator">
+    <Frame.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+    </Frame.Resources>
+    <Frame.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Text="-" Clicked="Minus_Clicked"/>
+            <Entry Grid.Column="1" Text="0" Keyboard="Numeric" x:Name="num" FontSize="30" HorizontalTextAlignment="Center" Unfocused="num_Unfocused"/>
+            <Button Grid.Column="2" Text="+" Clicked="Plus_Clicked"/>
+        </Grid>
+    </Frame.Content>
+</Frame>

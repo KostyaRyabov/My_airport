@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" CornerRadius="10" BackgroundColor="Gray" Padding="0"
+             x:Class="Client.Controls.Commit_Delete_Cencel">
+    <Frame.Content>
+        <Grid ColumnSpacing="-2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="commit" Width="0*"/>
+                <ColumnDefinition x:Name="delete"/>
+                <ColumnDefinition x:Name="cancel" Width="0*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="cancelBn" Text="cancel" Grid.Column="0"/>
+            <Button x:Name="deleteBn" Text="delete" Grid.Column="1"/>
+            <Button x:Name="commitBn" Text="commit" Grid.Column="2"/>
+        </Grid>
+    </Frame.Content>
+</Frame>

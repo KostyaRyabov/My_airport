@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="White"
+             x:Class="Client.Controls.exCheckBox">
+    <Frame.Content>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="title" Grid.Column="0" Text="param1"
+               HorizontalTextAlignment="Center"
+               FontSize="20"/>
+        <Label Grid.Column="1" Text=":"
+               FontSize="20"/>
+        <CheckBox x:Name="cb" Grid.Column="2"
+               HorizontalOptions="Center"/>
+    </Grid>
+    </Frame.Content>
+</Frame>

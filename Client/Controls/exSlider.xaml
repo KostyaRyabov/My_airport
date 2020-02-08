@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       mc:Ignorable="d"
+       BackgroundColor="White"
+       x:Class="Client.Controls.exSlider">
+    <Frame.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" 
+               x:Name="title" Text="param1"
+               HorizontalTextAlignment="Center"
+               FontSize="20"/>
+
+            <Button x:Name="M"
+                Grid.Column="0" Grid.Row="1"
+                Text="-" Clicked="Minus_Clicked"/>
+            <Slider x:Name="slider"
+                Grid.Column="1" Grid.Row="1" 
+                Value="0" Minimum="0" Maximum="1000"
+                MaximumTrackColor="Black" MinimumTrackColor="Black"
+                Margin="-10,0,-10,0" ValueChanged="OnValueChanged"/>
+            <Button x:Name="P" Grid.Column="2" Grid.Row="1" Text="+" Clicked="Plus_Clicked"/>
+            <Entry x:Name="entry" 
+               Grid.Column="3" Grid.Row="1" 
+               Keyboard="Numeric" Text="0"
+               HorizontalTextAlignment="Center" 
+               MaxLength="10000" Margin="-10,0,-10,0"
+               TextChanged="OnTextChanged"/>
+        </Grid>
+    </Frame.Content>
+</Frame>
