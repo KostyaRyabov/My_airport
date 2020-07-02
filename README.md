@@ -1,5 +1,5 @@
 # My_airport
-This Android app is made using Xamarin. It interacts with the MS SQL Server to work with an imaginary schedule of aircraft.
+This Android app is made using Xamarin. It interacts with the server (MS SQL Server) to work with an imaginary schedule of aircraft.
 
 # Examples
 ![alt text](examples/1.png)
